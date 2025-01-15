@@ -36,7 +36,7 @@ class Store():
         if not self.items:
             print(f"В магазине {self.name} нет товаров.")
         else:
-            print(f"Товары в магазине {self.name} :")
+            print(f"Товары в магазине {self.name}:")
             for name, price in self.items.items():
                 print(f"{name}: {price:.2f}")
 
@@ -57,3 +57,8 @@ store3.add_item("Футболка", 1500)
 store3.add_item("Джинсы", 2500)
 store3.add_item("Кроссовки", 4000)
 store3.list_items()
+
+store1.update_price("Ноутбук",65000)
+store2.remove_item("Книга 2")
+store3.add_item("Шуба", 56000)
+
