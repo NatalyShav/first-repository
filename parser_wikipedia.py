@@ -52,6 +52,7 @@ def main():
 
             selection = int(input("Ваш выбор (1, 2, 3): ")) - 1
             if 0 <= selection < len(related_links):
+                selected_article = related_links[selection].text  # Сохраняем название выбранной статьи
                 related_links[selection].click()
                 time.sleep(5)  # Ждем загрузки страницы
 
